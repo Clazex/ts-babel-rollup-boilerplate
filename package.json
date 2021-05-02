@@ -1,0 +1,46 @@
+{
+	"name": "ts-babel-rollup-boilerplate",
+	"version": "0.1.0",
+	"description": "A boilerplate for using TypeScript & Babel & Rollup",
+	"author": "Clazex <clazex.y@gmail.com>",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"private": true,
+	"scripts": {
+		"build": "rollup -c",
+		"lint": "eslint --ext .ts",
+		"fix": "npm run lint -- --fix"
+	},
+	"dependencies": {
+		"@babel/runtime-corejs3": "^7.14.0"
+	},
+	"devDependencies": {
+		"@atomico/rollup-plugin-sizes": "^1.1.4",
+		"@babel/core": "^7.14.0",
+		"@babel/plugin-transform-runtime": "^7.13.15",
+		"@babel/preset-env": "^7.14.0",
+		"@babel/preset-typescript": "^7.13.0",
+		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-commonjs": "^18.0.0",
+		"@rollup/plugin-eslint": "^8.0.1",
+		"@rollup/plugin-node-resolve": "^11.2.1",
+		"core-js": "^3.11.1",
+		"eslint": "^7.25.0",
+		"rollup": "^2.46.0",
+		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"typescript": "^4.2.4"
+	},
+	"files": [
+		"dist"
+	],
+	"homepage": "https://github.com/Clazex/ts-babel-rollup-boilerplate#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Clazex/ts-babel-rollup-boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Clazex/ts-babel-rollup-boilerplate/issues"
+	}
+}
